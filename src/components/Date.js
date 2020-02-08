@@ -6,13 +6,14 @@ import styled from "styled-components";
 const DateSelector = styled.div`
     border: 3px solid grey;
     width: 50%;
-    margin: 0 auto;
-    border-radius: 5px 10px 10px 5px;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 10px;
     
     h2 {
-        font-size: 15px;
+        font-size: 25px;
     }
-    background: rgba(42, 42, 44, 0.856);
+    background: white;
     box-shadow: 0 0.8px 1.2px rgba(145, 145, 145, 0.034)
   ;
 `;
@@ -33,7 +34,7 @@ export default function DateForm(props){
     }
     return(
         <DateSelector>
-        <h2>Select date of picture: <DatePicker 
+        <h2>Select A Date For a New Picture: <DatePicker 
         selected = {new Date(props.date)}
         onChange = {handleChange}
         /></h2>

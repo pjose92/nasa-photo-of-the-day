@@ -4,7 +4,7 @@ import "./space.css";
 
 export const TheCards = props => {
     console.log(props.spaceData);
-    console.log(props.date);
+    // console.log(props.date);
     
 
   return (
@@ -25,7 +25,7 @@ export const TheCards = props => {
       </div>
       {/* the bottom iinfo of the photo.  */}
       <div className="info-box">
-        <h2>{props.spaceData.copyright ? `This Picture Was Taken by ${props.spaceData.copyright}` : null }</h2>
+        <h2>{props.spaceData.copyright ? `This Picture Was Taken by: ${props.spaceData.copyright}` : null }</h2>
 
         <p>{props.spaceData.explanation}</p>
 

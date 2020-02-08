@@ -10,11 +10,11 @@ const AppWrapper = styled.div`
   margin: 0 auto;
   box-shadow: #aaa 0 10px 60px;
   background: black;
-  padding: 2px;
+  padding: 40px;
   color: white;
 `;
 
-function App  () {
+function App () {
   return (
     <header>
       <AppWrapper>
